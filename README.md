@@ -1,31 +1,99 @@
+# Using buttons
+```template
+basic.forever(function () {
+	
+})
 
-> Open this page at [https://craftandcode.github.io/using-buttons/](https://craftandcode.github.io/using-buttons/)
+```
+```blocks
+input.onButtonPressed(Button.A, function () {
+	
+})
+```
+## Step 0 @showDialog
+Hello! Today you'll learn to use buttons and assemble the code of a reaction-based game. 
 
-## Use as Extension
+## Step 1 @showHint
+You've already learned the two ways of running your program: ``||basic.on start||`` and ``||basic.forever||``.  
+Now let's have a look at the ``||input.on button pressed||`` block. You can find it in your toolbox inside the ``||input.input||`` category.
+```hint
+Find this block and add it to your code.
+```
+```blocks
+input.onButtonPressed(Button.A, function () {
+	
+})
+```
 
-This repository can be added as an **extension** in MakeCode.
+## Step 2 @showHint
+Now, let's make our Micro:bit display a happy face when a button is pressed. When your code is assembled, download it to your Micro:bit and press the ``|A|`` button. Do you see a happy face?
+```hint
+Your code could look like this:
+```
+```blocks
+input.onButtonPressed(Button.A, function () {
+	basic.showIcon(IconNames.Happy)
+})
+```
+```hint
+or like this:
+```
+```blocks
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        # . . . #
+        . # # # .
+        `)
+})
+```
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/craftandcode/using-buttons** and import
+## Step 2
+### Do it yourself
+Add your own code to show a sad face when the other button is pressed. Download your code and push buttons to switch between emotions!
+```hint
+Your code could be something like this:
+```
+```blocks
+input.onButtonPressed(Button.A, function () {
+	basic.showIcon(IconNames.Happy)
+})
+input.onButtonPressed(Button.B, function () {
+	basic.showIcon(IconNames.Sad)
+})
+```
+## Step 3 @showDialog
+Note, only one program can be assigned to each button. Also, you can assign a program to both buttons being pressed at once. Therefore, you can't have more than 3 ``||input.on button presssed||`` blocks in your code.
 
-## Edit this project ![Build status badge](https://github.com/craftandcode/using-buttons/workflows/MakeCode/badge.svg)
+## Step 4
+### Do it yourself
+Make a reaction-based game. The rules of the game are simple:
+* [ ] If the ``|A|`` button is pressed first, the first player wins.
+* [ ] If the ``|B|`` button is pressed first, the second player wins.
+* [ ] If the both buttons are pressed at once, the draw is declared.
+```hint
+You can use this block to display the players' names: 
+```
+```block
+basic.showString("Player 1 wins!")
+```
+```hint
+You can use this block to show a picture of a trophy:
+```
+```block
+basic.showLeds(`
+        . # # # .
+        # # # # #
+        . # # # .
+        . . # . .
+        . # # # .
+        `)
+```
+## Step 5
+Assembled your game? You rock! Now go play it with your friends and family!
 
-To edit this repository in MakeCode.
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/craftandcode/using-buttons** and click import
 
-## Blocks preview
 
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-
-![A rendered view of the blocks](https://github.com/craftandcode/using-buttons/raw/master/.github/makecode/blocks.png)
-
-#### Metadata (used for search, rendering)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
