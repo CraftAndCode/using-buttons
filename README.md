@@ -92,7 +92,9 @@ basic.showLeds(`
         `)
 ```
 ## Step 5
-Assembled your game? You rock! Now go play it with your friends and family!
+Assembled your game? You rock! Now go play it with your friends and family!  
+  
+If you want to learn more about buttons, watch this [video](https://www.youtube.com/watch?v=t_Qujjd_38o&list=PLMMBk9hE-SeqDYtw9pGNPsQ10V_EGMyGe&index=2)
 
 
 
