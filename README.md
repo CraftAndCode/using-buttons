@@ -94,7 +94,7 @@ basic.showLeds(`
 ## Step 5
 Assembled your game? You rock! Now go play it with your friends and family!  
   
-Also, if you'd like to learn more about how buttons work, watch this [video](https://www.youtube.com/watch?v=t_Qujjd_38o&list=PLMMBk9hE-SeqDYtw9pGNPsQ10V_EGMyGe&index=2)!
+Also, if you'd like to learn more about how buttons work, [watch this video](https://www.youtube.com/watch?v=t_Qujjd_38o&list=PLMMBk9hE-SeqDYtw9pGNPsQ10V_EGMyGe&index=2)!
 
 
 
